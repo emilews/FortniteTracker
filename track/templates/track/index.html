@@ -45,7 +45,7 @@
 										<header class="major">
 											<h2>Track your record</h2>
 										</header>
-										<form action="" method="get">
+										<form action="graphs" method="get">
 											Nickname:<br>
 											<input name="user" type="text">
 											Platform:<br>
@@ -58,7 +58,7 @@
 										  </div>
 										  <br>
 										  {% csrf_token %}
-											<a href="graphs.html" class="button" style="float:right;">Track!</a>
+											<button type="submit" class="button" style="float:right;">Track!</button>
 										</form>
 										</ul>
 									</div>

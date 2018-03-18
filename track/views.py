@@ -7,7 +7,6 @@ def home(request):
 
 
 def graphs(request):
-
     username = request.GET['user']
     return render(request,'track/graphs.html', {'userName' : username})
 

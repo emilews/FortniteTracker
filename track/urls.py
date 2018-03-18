@@ -3,5 +3,5 @@ from . import views
 
 urlpatterns = [
         url(r'^$', views.home),
-        url('graphs.html', views.graphs),
+        url(r'^graphs', views.graphs),
     ]
