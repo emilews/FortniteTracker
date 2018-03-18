@@ -6,7 +6,7 @@
 -->
 <html>
 	<head>
-		<title>Fortnite Tracker</title>
+		<title>Fortnite: {{userName}}</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
@@ -31,7 +31,7 @@
 				<!-- Nav -->
 					<nav id="nav">
 						<ul>
-							<li><a href="#intro" class="active">Search</a></li>
+							<li><a href="#intro" class="active">{{userName}}</a></li>
 						</ul>
 					</nav>
 
@@ -40,30 +40,7 @@
 
 						<!-- Introduction -->
 							<section id="intro" class="main">
-								<div class="spotlight">
-									<div class="content">
-										<header class="major">
-											<h2>Track your record</h2>
-										</header>
-										<form action="" method="get">
-											Nickname:<br>
-											<input name="user" type="text">
-											Platform:<br>
-										  <div class="dropdown">
-											<select name="platform">
-												<option value="pc">PC</option>
-												<option value="cb1">Xbox One</option>
-												<option value="ps4">PS4</option>
-											</select>
-										  </div>
-										  <br>
-										  {% csrf_token %}
-											<a href="graphs.html" class="button" style="float:right;">Track!</a>
-										</form>
-										</ul>
-									</div>
-									<span class="image"><img src="{% static "/images/pic01.jpg" %}" alt="" /></span>
-								</div>
+
 							</section>
 							</section>
 					</div>
