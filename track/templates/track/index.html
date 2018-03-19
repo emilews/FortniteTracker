@@ -47,7 +47,7 @@
 										</header>
 										<form action="" method="get">
 											Nickname:<br>
-											<input name="user" type="text">
+											<input name="userName" type="text">
 											Platform:<br>
 										  <div class="dropdown">
 											<select name="platform">
@@ -57,8 +57,7 @@
 											</select>
 										  </div>
 										  <br>
-										  {% csrf_token %}
-											<a href="graphs.html" class="button" style="float:right;">Track!</a>
+											<button type="submit" class="button" style="float:right;">Track!</a>
 										</form>
 										</ul>
 									</div>

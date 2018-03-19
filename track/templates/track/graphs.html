@@ -27,24 +27,37 @@
 						<h1>Fortnite Tracker</h1>
 						<p>Just another free, fully responsive tracker<br />
 					</header>
-
 				<!-- Nav -->
 					<nav id="nav">
 						<ul>
 							<li><a href="#intro" class="active">{{userName}}</a></li>
 						</ul>
 					</nav>
-
 				<!-- Main -->
 					<div id="main">
-
-						<!-- Introduction -->
 							<section id="intro" class="main">
-
+								
+							<div class="lefty">
+								<div >Platform of choice: {{ platform }}</div>
+								<div >Total Kills: {{totalKills}}</div>
+								<div >Score: {{totalScore}}</div>
+								<div >Total Matches Played: {{totalMatches}}</div>
+							</div>
+							<div class="cent">
+									<div>Total Wins: {{totalWins}}</div>
+									<div>Wins Percentage: {{winsPercentage}}</div>
+									<div>K/D Ratio: {{kdRatio}}</div>
+							</div>
+							<span class="image imagenDer"><img src="{% static "/images/favicon.png" %}" alt="" /></span>
+							<div class="righty">
+								<div>Kills Per Minute: {{killsPerMinute}}</div>
+								<div>Total Time Played: {{totalPlayedTime}}</div>
+								<div>Average Time Alive: {{averageTimeSurvival}}</div>
+							</div><br><br>
+							
 							</section>
 							</section>
 					</div>
-
 				<!-- Footer -->
 					<footer id="footer">
 						<section>

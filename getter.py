@@ -1,4 +1,5 @@
-import requests, json
+import requests
+import json
 
 
 def getValues(platform, userName):
@@ -6,8 +7,9 @@ def getValues(platform, userName):
     r = requests.get('https://api.fortnitetracker.com/v1/profile/' + platform + '/' + userName, headers=headers)
     parsedJson =  json.dumps(r.json(), ensure_ascii = False)
     loadedJson = json.loads(parsedJson)
-    userName = loadedJson['epicUserHandle']
-    platformName = loadedJson['platformNameLong']
-    print("Platform: " + platformName + "\nUser Name: " + userName)
+
+    f = open('myjson.json', 'w')
+    f.write(parsedJson)
+    f.close()
 
 getValues('pc', 'emilews')

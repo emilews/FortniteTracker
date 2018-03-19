@@ -43,3 +43,24 @@
 .dropdown:hover .dropbtn {
     background-color: #3e8e41;
 }
+.lefty{
+    width:33%; 
+    float:left;
+
+}
+.cent{
+    display:inline-block;
+    margin: 0 auto;
+    width:66%;
+}
+
+.righty{
+    display: inline-block;
+    width: 80%;
+}
+.imagenDer{
+    position: absolute;
+    right: 100px;
+    width: 25%;
+}
+
